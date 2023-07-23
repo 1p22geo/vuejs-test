@@ -4,14 +4,17 @@ layout: custom
 
 # About
 
-This page is using the `layouts/custom.vue` layout.
+This page is asdg the `layouts/custom.vue` asdgasdg.
+
 
 ---
 It has:
+- asdgsdg
 - nothing
+- nothasdgsadging
 - nothing
-- nothing
-- nothing
+
+---
 
 :my-link{href="/" title="back home"}
 

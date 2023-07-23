@@ -2,16 +2,18 @@
 layout: custom
 ---
 
-# More content
+# More asdsdg
 
-This page has more content.
+This asdgsdg has more contesdgsdgnt.
 
 ---
 It has:
 - nothing
 - nothing
+- asdgsdg
 - nothing
-- nothing
+
+---
 
 :my-link{href="/" title="back home"}
 

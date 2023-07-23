@@ -2,13 +2,19 @@
 layout: custom
 ---
 
-# Document Driven
+# Index page
 
+This page is using the `layouts/custom.vue` layout.
 
-This page corresponds to the `/` route of your website. You can delete it or create another file in the `content/` directory.
-
-Try to navigate to [/about](/about).
+---
+It has:
+- nothing
+- nothing
+- nothing
+- nothing
 
 ---
 
-Look at the [Document Driven documentation](https://content.nuxtjs.org/guide/writing/document-driven) to learn more.
+:my-link{href="/" title="back home"}
+
+

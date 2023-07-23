@@ -1,9 +1,11 @@
 <template>
   <div class="container">
     <header class="top-header">
+      <div></div>
       <NuxtLink to="/"><span>Home</span></NuxtLink>
       <NuxtLink to="/about"><span>About</span></NuxtLink>
       <NuxtLink to="/more"><span>More content</span></NuxtLink>
+      <div></div>
     </header>
     <main>
       <slot />
@@ -20,23 +22,42 @@ body {
   background-color: #ddd;
 }
 
-.top-header {
-  display: flex;
-  padding: 12px;
-  grid-column: 1/-1;
+
+* {
+  box-sizing: border-box;
 }
 
 main {
+  >* {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
   grid-column: 2/3;
   padding: 18px;
   background-color: #eee;
-  border-radius: 12px;
-  box-shadow: 0px 0px 4px 4px #ccc inset;
+  box-shadow: 0px 0px 2px 2px #ccc inset;
+
+  * {
+    clear: both;
+
+  }
 
 
   .link {
     background-color: #000;
     margin: 8px;
+    text-align: center;
+    display: grid;
+    place-content: center;
     padding: 12px;
     text-decoration: none;
     color: white;
@@ -63,25 +84,35 @@ main {
   }
 }
 
-.top-header>* {
-  padding: 8px 16px;
-  border-bottom: $border-weak;
-  text-decoration: none;
-  color: black;
-  display: grid;
-  place-content: center;
-  text-align: center;
-
-  &:hover {
-    border-bottom: $border-stronk;
+.top-header {
+  display: flex;
+  justify-items: start;
+  margin: 12px;
+  grid-column: 1/-1;
+  >div:last-child{
+    width: 100%;
+    border-bottom: $border-weak;
+    
   }
+  >a {
+    border-bottom: $border-weak;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+    display: grid;
+    place-content: center;
+    text-align: center;
 
-  &.router-link-active {
-    border-bottom: none;
-    border-top: $border-weak;
-    border-left: $border-weak;
-    border-right: $border-weak;
-    // the active link
+    &:hover {
+      border-bottom: $border-stronk;
+    }
+
+    &.router-link-active {
+      border-bottom: none;
+      border-top: $border-weak;
+      border-left: $border-weak;
+      border-right: $border-weak;
+      // the active link
+    }
   }
-}
-</style>
+}</style>
