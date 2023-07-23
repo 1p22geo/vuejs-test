@@ -2,19 +2,17 @@
 layout: custom
 ---
 
-# Index page
+# Main page
+---
 
-This page is using the `layouts/custom.vue` layout.
+![image](image.jpg)
+koteł
 
 ---
-It has:
-- nothing
-- nothing
-- nothing
-- nothing
 
----
+:counter
+
+
+# nie bedzie licznika
 
 :my-link{href="/" title="back home"}
-
-
